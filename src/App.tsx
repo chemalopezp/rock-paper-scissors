@@ -1,17 +1,20 @@
+import { useState } from "react";
+
 import "./App.css";
+import Score from "./components/Score";
+import ShowRulesModal from "./components/ShowRulesModal";
+import Game from "./components/Game";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
-  // Score
-  // Rules
+  const [score, setScore] = useState(0);
 
-  // You Picked
-  // The House Picked
-
-  // You Win
-  // You Lose
-
-  // Play Again
+  return (
+    <div className="p-4 m-4 bg-blue-950">
+      <Score score={score} />
+      <Game setScore={setScore} />
+      <ShowRulesModal />
+    </div>
+  );
 }
 
 export default App;
