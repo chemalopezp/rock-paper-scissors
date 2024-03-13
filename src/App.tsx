@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="p-4 m-4 bg-blue-950">
       <Score score={score} />
-      <Game setScore={setScore} />
+      <Game score={score} setScore={setScore} />
       <ShowRulesModal />
     </div>
   );

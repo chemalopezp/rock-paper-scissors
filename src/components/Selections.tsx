@@ -1,11 +1,11 @@
-type Symbol = "rock" | "paper" | "scissors" | null;
+import type { Selection } from "../types";
 
 interface Props {
-  selection: Symbol;
-  computerSelection: Symbol;
+  selection: Selection;
+  computerSelection: Selection;
 }
 
-const border = (icon: Symbol) => {
+const border = (icon: Selection) => {
   switch (icon) {
     case "rock":
       return "border-red-500";

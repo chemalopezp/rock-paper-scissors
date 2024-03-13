@@ -26,7 +26,7 @@ const ShowRulesModal: React.FC = () => {
       </button>
       {isModalOpen && (
         <dialog id="rules" ref={modalRef} className="modal">
-          <div className="modal-content bg-white">
+          <div className="p-8 modal-content bg-white">
             <h2 className="p-4 text-2xl font-bold uppercase text-sky-800 text-left">
               Rules
             </h2>
